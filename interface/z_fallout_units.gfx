@@ -1,5 +1,6 @@
 # modified by Skalchemist for OWBUnits mod to ensure all unit icons have noOfFrames=2 and to assign each unit type from /commmon/units its own icons
 
+# making all texticons 1 frame
 spriteTypes = {
 	# Previous setup by Mechano and Garnithor
 
@@ -8,18 +9,18 @@ spriteTypes = {
 		name = "GFX_group_robot_group_icon"
 		# textureFile = "gfx/interface/counters/divisions_large/unit_support_robots_icon.dds" # corrected spelling
 		textureFile = "gfx/interface/counters/divisions_large/unit_support_robot_icon.dds"
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 	spriteType = { 
 		name = "GFX_group_mutant_group_icon"
 		textureFile = "gfx/interface/counters/divisions_large/unit_super_mutant_infantry_icon.dds"
-		noOfFrames = 2 
+		noOfFrames = 1 #2 
 	}
 	# spriteType = { name = "GFX_group_special_forces_group_icon"						textureFile = "gfx/interface/counters/division_templates_large/custom_template_037.dds" noOfFrames = 1 }
 	spriteType = { 
 		name = "GFX_group_special_forces_group_icon"
 		textureFile = "gfx/interface/counters/divisions_large/unit_spec_ops_icon.dds"
-		noOfFrames = 2 
+		noOfFrames = 1 #2 
 	}
 
 	# Category icons
@@ -29,21 +30,21 @@ spriteTypes = {
 		name = "GFX_unit_category_army_icon_small"
 		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	spriteType = {
 		name = "GFX_unit_category_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	spriteType = {
 		name = "GFX_unit_category_leg_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	spriteType = {   # Needs one
@@ -51,7 +52,7 @@ spriteTypes = {
 		# texturefile = "gfx/texticons/unit_infantry_icon_small.dds" # corrected
 		texturefile = "gfx/texticons/unit_spec_ops_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	spriteType = {
@@ -60,7 +61,7 @@ spriteTypes = {
 		texturefile = "gfx/texticons/unit_spec_ops_icon_small.dds"
 		legacy_lazy_load = no
 		# noOfFrames = 1
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	spriteType = {
@@ -69,7 +70,7 @@ spriteTypes = {
 		texturefile = "gfx/texticons/unit_behemoth_icon_small.dds"
 		legacy_lazy_load = no
 		# noOfFrames = 1
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	spriteType = {
@@ -77,7 +78,7 @@ spriteTypes = {
 		# texturefile = "gfx/texticons/unit_power_armor_icon_small.dds" # corrected
 		texturefile = "gfx/texticons/unit_power_armour_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# used support robot icon
@@ -86,7 +87,7 @@ spriteTypes = {
 		# texturefile = "gfx/texticons/unit_infantry_icon_small.dds" # corrected
 		texturefile = "gfx/texticons/unit_support_robot_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# feels like there should a separate symbol for this, but I don't know where this shows up
@@ -94,14 +95,14 @@ spriteTypes = {
 		name = "GFX_unit_category_mutants_icon_small"
 		texturefile = "gfx/texticons/unit_super_mutant_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	spriteType = {
 		name = "GFX_unit_category_vehicles_icon_small"
 		texturefile = "gfx/texticons/unit_motorized_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 	
 	# what the heck is weapon_infantry?
@@ -109,7 +110,7 @@ spriteTypes = {
 		name = "GFX_unit_category_weapon_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# definitely needs its own symbol, but what? and where does it appear?
@@ -117,7 +118,7 @@ spriteTypes = {
 		name = "GFX_unit_category_non_combat_support_icon_small"
 		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# definitely needs its own symbol, but what? and where does it appear?
@@ -125,21 +126,21 @@ spriteTypes = {
 		name = "GFX_unit_category_combat_support_icon_small"
 		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	spriteType = {
 		name = "GFX_unit_category_demolitions_icon_small"
 		texturefile = "gfx/texticons/unit_demolitions_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 	
 	spriteType = {
 		name = "GFX_unit_category_fireteams_icon_small"
 		texturefile = "gfx/texticons/unit_fireteam_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	spriteType = {  # needs one
@@ -147,10 +148,11 @@ spriteTypes = {
 		# texturefile = "gfx/texticons/unit_infantry_icon_small.dds" # corrected
 		texturefile = "gfx/texticons/unit_spec_ops_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 	
-	# SHIP categories
+	# SHIP categories 
+	# why do these all have infantry in the base file?  Are they used anywhere?  Not changing # of frames so I can see what is going on
 	spriteType = {
 		name = "GFX_unit_category_screen_ship_icon_small"
 		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
@@ -165,6 +167,7 @@ spriteTypes = {
 	}
 
 	# AIR categories
+	# same as ship
 	spriteType = {
 		name = "GFX_unit_category_strat_bomber_icon_small"
 		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
@@ -218,7 +221,7 @@ spriteTypes = {
 		name = "GFX_unit_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# heavy_infantry
@@ -236,7 +239,7 @@ spriteTypes = {
 		name = "GFX_unit_heavy_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_heavy_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# militia
@@ -254,7 +257,7 @@ spriteTypes = {
 		name = "GFX_unit_militia_icon_small"
 		texturefile = "gfx/texticons/unit_militia_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# police_infantry
@@ -272,7 +275,7 @@ spriteTypes = {
 		name = "GFX_unit_police_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_police_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# motorized - seems to be relying on the definition in the base subunitsicon.gfx - skalchemist
@@ -292,7 +295,7 @@ spriteTypes = {
 		name = "GFX_unit_skate_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_skate_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# wasteland_infantry
@@ -348,7 +351,7 @@ spriteTypes = {
 		name = "GFX_unit_super_mutant_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_super_mutant_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# mirelurk_infantry
@@ -366,7 +369,7 @@ spriteTypes = {
 		name = "GFX_unit_mirelurk_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_mirelurk_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# molerat_infantry
@@ -384,7 +387,7 @@ spriteTypes = {
 		name = "GFX_unit_molerat_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_molerat_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# super_mutant_nightkin_infantry
@@ -402,7 +405,7 @@ spriteTypes = {
 		name = "GFX_unit_super_mutant_nightkin_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_super_mutant_nightkin_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 	
 	# super_mutant_aux_infantry
@@ -421,7 +424,7 @@ spriteTypes = {
 		name = "GFX_unit_super_mutant_aux_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_super_mutant_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 	
 	# behemoth
@@ -442,7 +445,7 @@ spriteTypes = {
 		# texturefile = "gfx/texticons/unit_super_mutant_infantry_icon_small.dds" # custom icon created - skalchemist
 		texturefile = "gfx/texticons/unit_behemoth_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 	
 	# ghoul_infantry
@@ -460,7 +463,7 @@ spriteTypes = {
 		name = "GFX_unit_ghoul_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_ghoul_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 	
 	# ghoul_paratrooper
@@ -481,7 +484,7 @@ spriteTypes = {
 		# texturefile = "gfx/texticons/unit_ghoul_infantry_icon_small.dds" # has custom icon now - skalchemist
 		texturefile = "gfx/texticons/unit_ghoul_paratrooper_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 	
 	# wasteland_melee_infantry
@@ -521,7 +524,7 @@ spriteTypes = {
 		#texturefile = "gfx/texticons/unit_power_armor_support_icon_small.dds" # corrected so spelling is the same - skalchemist
 		texturefile = "gfx/texticons/unit_power_armour_support_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# power_armour
@@ -542,7 +545,7 @@ spriteTypes = {
 		# texturefile = "gfx/texticons/unit_power_armor_icon_small.dds" # corrected so that spelling matches - skalchemist
 		texturefile = "gfx/texticons/unit_power_armour_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 	
 	# crusader_unit - doesn't seem to be in use but it is defined and seems to be power armour based, so just in case...
@@ -560,7 +563,7 @@ spriteTypes = {
 		name = "GFX_unit_crusader_unit_icon_small"
 		texturefile = "gfx/texticons/unit_power_armour_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# motorbike
@@ -649,7 +652,7 @@ spriteTypes = {
 		name = "GFX_unit_fireteam_infantry_icon_small"
 		textureFile = "gfx/texticons/unit_fireteam_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 	spriteType = {
 		name = "GFX_unit_fireteam_infantry_icon_medium_white"
@@ -667,7 +670,7 @@ spriteTypes = {
 		name = "GFX_unit_fireteam_support_icon_small"
 		textureFile = "gfx/texticons/unit_fireteam_support_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 	# shouldn't be necessary, only support - skalchemist
 	#spriteType = {
@@ -686,7 +689,7 @@ spriteTypes = {
 		name = "GFX_unit_power_armour_fireteam_infantry_icon_small"
 		textureFile = "gfx/texticons/unit_power_armour_fireteam_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 	spriteType = {
 		name = "GFX_unit_power_armour_fireteam_infantry_icon_medium_white"
@@ -704,7 +707,7 @@ spriteTypes = {
 		name = "GFX_unit_dog_infantry_icon_small"
 		textureFile = "gfx/texticons/unit_dog_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 	spriteType = {
 		name = "GFX_unit_dog_infantry_icon_medium_white"
@@ -723,7 +726,7 @@ spriteTypes = {
 		name = "GFX_unit_dog_company_icon_small"
 		# textureFile = "gfx/texticons/unit_dog_company_icon_small.dds" # corrected so that names matche - skalchemist
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# support_robot
@@ -744,7 +747,7 @@ spriteTypes = {
 		# texturefile = "gfx/texticons/unit_support_robots_icon_small.dds" # corrected so spelling is the same - skalchemist
 		texturefile = "gfx/texticons/unit_support_robot_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 	
 	# combat_robot
@@ -765,7 +768,7 @@ spriteTypes = {
 		# texturefile = "gfx/texticons/unit_combat_robots_icon_small.dds" # corrected so spelling is the same - skalchemist
 		texturefile = "gfx/texticons/unit_combat_robot_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 	
 	# super_heavy_robot - moved from z_fallout_division_designer.gfx - skalchemist
@@ -783,7 +786,7 @@ spriteTypes = {
 		name = "GFX_unit_super_heavy_robot_icon_small"
 		texturefile = "gfx/texticons/unit_super_heavy_robot_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# Security_robot
@@ -805,7 +808,7 @@ spriteTypes = {
 		# texturefile = "gfx/texticons/unit_combat_robots_icon_small.dds" # have new icon - skalchemist
 		texturefile = "gfx/texticons/unit_security_robot_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# demolitions_infantry
@@ -818,7 +821,7 @@ spriteTypes = {
 		name = "GFX_unit_demolitions_infantry_icon_small"
 		textureFile = "gfx/texticons/unit_demolitions_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 	spriteType = {
 		name = "GFX_unit_demolitions_infantry_icon_medium_white"
@@ -836,7 +839,7 @@ spriteTypes = {
 		name = "GFX_unit_demolitions_support_icon_small"
 		texturefile = "gfx/texticons/unit_demolitions_support_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 	# shouldn't be necessary, support only - skalchemist
 	#spriteType = {
@@ -855,7 +858,7 @@ spriteTypes = {
 		name = "GFX_unit_power_armour_demolitions_infantry_icon_small"
 		textureFile = "gfx/texticons/unit_power_armour_demolitions_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 	spriteType = {
 		name = "GFX_unit_power_armour_demolitions_infantry_icon_medium_white"
@@ -881,7 +884,7 @@ spriteTypes = {
 		# texturefile = "gfx/texticons/unit_anti_tank_support_icon_small.dds" # corrected for name consistency - skalchemist
 		texturefile = "gfx/texticons/unit_anti_tank_company_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# anti_air_support
@@ -900,7 +903,7 @@ spriteTypes = {
 		name = "GFX_unit_anti_air_support_icon_small"
 		texturefile = "gfx/texticons/unit_anti_air_support_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# flamer support/company
@@ -959,7 +962,7 @@ spriteTypes = {
 		# texturefile = "gfx/texticons/unit_mechanized_icon_small.dds" # corrected to use new icon - skalchemist
 		texturefile = "gfx/texticons/unit_apc_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# fake_intel_unit - seems to be handled by base files 
@@ -981,7 +984,7 @@ spriteTypes = {
 		name = "GFX_unit_spec_ops_icon_small"
 		texturefile = "gfx/texticons/unit_spec_ops_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# spec_ops_cavalry
@@ -1002,7 +1005,7 @@ spriteTypes = {
 		# texturefile = "gfx/texticons/unit_cavalry_icon_small.dds" # corrected to have consistent name - skalchemist
 		texturefile = "gfx/texticons/unit_spec_ops_cavalry_icon_small.dds" 
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# tank
@@ -1029,7 +1032,7 @@ spriteTypes = {
 		# texturefile = "gfx/texticons/unit_heavy_armor_icon_small.dds" # corrected to have consistent name - skalchemist
 		texturefile = "gfx/texticons/unit_tank_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 	
 	# medical_chem_company
@@ -1044,7 +1047,7 @@ spriteTypes = {
 		# texturefile = "gfx/texticons/support_field_hospital_small.dds" # corrected to have consistent name - skalchemist
 		texturefile = "gfx/texticons/unit_medical_chem_company_icon_small.dds" 
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 	
 	# logistics_company - should be handled by main subunitsicon.gfx
@@ -1059,7 +1062,7 @@ spriteTypes = {
 		name = "GFX_unit_cybernetic_support_icon_small"
 		texturefile = "gfx/texticons/unit_cybernetic_support_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# monster_support
@@ -1072,7 +1075,7 @@ spriteTypes = {
 		name = "GFX_unit_plant_support_icon_small"
 		texturefile = "gfx/texticons/unit_monster_support_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# plant_support
@@ -1085,7 +1088,7 @@ spriteTypes = {
 		name = "GFX_unit_plant_support_icon_small"
 		texturefile = "gfx/texticons/unit_plant_support_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 	#shouldn't be necessary, support only - skalchemist
 	#spriteType = {
@@ -1112,7 +1115,7 @@ spriteTypes = {
 		# texturefile = "gfx/texticons/unit_recon_icon_small.dds" # corrected for name consistency - skalchemist
 		texturefile = "gfx/texticons/unit_recon_company_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# Chariot - chariot_unit
@@ -1133,7 +1136,7 @@ spriteTypes = {
 		# texturefile = "gfx/texticons/unit_chariot_icon_small.dds" # corrected for naming consistency - skalchemist
 		texturefile = "gfx/texticons/unit_chariot_unit_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# Sentinel - sentinel_unit
@@ -1154,7 +1157,7 @@ spriteTypes = {
 		# texturefile = "gfx/texticons/unit_sentinel_power_armor_icon_small.dds" # corrected so spelling is the same - skalchemist
 		texturefile = "gfx/texticons/unit_sentinel_unit_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# Alamo Volunteers/defenders - alamo_defenders
@@ -1172,7 +1175,7 @@ spriteTypes = {
 		name = "GFX_unit_alamo_defenders_icon_small"
 		texturefile = "gfx/texticons/unit_alamo_defenders_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# cybernetic_warform
@@ -1193,7 +1196,7 @@ spriteTypes = {
 		# texturefile = "gfx/texticons/unit_unit_warform_icon_small.dds" # corrected for name consistency - skalchemist
 		texturefile = "gfx/texticons/unit_unit_cybernetic_warform_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# Firebase Support Icons - forward_firebase_support
@@ -1212,7 +1215,7 @@ spriteTypes = {
 		name = "GFX_unit_forward_firebase_support_icon_small"
 		texturefile = "gfx/texticons/unit_forward_firebase_support_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 
 	# gary_unit
@@ -1230,6 +1233,6 @@ spriteTypes = {
 		name = "GFX_unit_gary_unit_icon_small"
 		texturefile = "gfx/texticons/unit_gary_unit_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 2
+		noOfFrames = 1 #2
 	}
 }
