@@ -1,0 +1,12 @@
+﻿# modified by Skalchemist for OWBUnits to remove all template_counter settings
+
+division_template = {
+	name = "Mantis Gearjocks"
+
+	regiments = {
+		heavy_infantry = { x = 0 y = 0 }
+		heavy_infantry = { x = 0 y = 1 }
+		heavy_infantry = { x = 1 y = 0 }
+		heavy_infantry = { x = 1 y = 1 }
+	}
+}

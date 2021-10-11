@@ -1,0 +1,55 @@
+﻿# modified by Skalchemist for OWBUnits to remove all template_counter settings
+
+division_template = {
+	name = "Twin Mothers Refugees"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "Calisto Refugees"
+		location = 6841
+		division_template = "Twin Mothers Refugees"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Luna Refugees"
+		location = 6841
+		division_template = "Twin Mothers Refugees"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Io Refugees"
+		location = 6841
+		division_template = "Twin Mothers Refugees"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Carme Refugees"
+		location = 6841
+		division_template = "Twin Mothers Refugees"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Valetudo Refugees"
+		location = 6841
+		division_template = "Twin Mothers Refugees"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+}

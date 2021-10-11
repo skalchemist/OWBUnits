@@ -1,0 +1,90 @@
+﻿# modified by Skalchemist for OWBUnits to remove all template_counter settings
+
+division_template = {
+	name = "Twin Mothers Survivors"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "Calisto Survivors"
+		location = 6841
+		division_template = "Twin Mothers Survivors"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Luna Survivors"
+		location = 6841
+		division_template = "Twin Mothers Survivors"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Io Survivors"
+		location = 6841
+		division_template = "Twin Mothers Survivors"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Carme Survivors"
+		location = 6841
+		division_template = "Twin Mothers Survivors"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Valetudo Survivors"
+		location = 6841
+		division_template = "Twin Mothers Survivors"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Calisto Duo Survivors"
+		location = 6841
+		division_template = "Twin Mothers Survivors"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Luna Duo Survivors"
+		location = 6841
+		division_template = "Twin Mothers Survivors"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Io Duo Survivors"
+		location = 6841
+		division_template = "Twin Mothers Survivors"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Carme Duo Survivors"
+		location = 6841
+		division_template = "Twin Mothers Survivors"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Valetudo Duo Survivors"
+		location = 6841
+		division_template = "Twin Mothers Survivors"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+}

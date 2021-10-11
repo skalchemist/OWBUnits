@@ -1,0 +1,47 @@
+﻿# modified by Skalchemist for OWBUnits to remove all template_counter settings
+
+division_template = {
+	name = "Woodsmen"
+	division_names_group = Psyker_Spec_Ops_01
+
+	regiments = {
+		spec_ops = { x = 0 y = 0 }
+		spec_ops = { x = 0 y = 1 }
+		spec_ops = { x = 1 y = 0 }
+		spec_ops = { x = 1 y = 1 }
+		spec_ops = { x = 2 y = 0 }
+		spec_ops = { x = 2 y = 1 }
+		spec_ops = { x = 2 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "The Woodsmen"
+		location = 646
+		division_template = "Woodsmen"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "The Woodsmen"
+		location = 646
+		division_template = "Woodsmen"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "The Woodsmen"
+		location = 646
+		division_template = "Woodsmen"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "The Woodsmen"
+		location = 646
+		division_template = "Woodsmen"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+}

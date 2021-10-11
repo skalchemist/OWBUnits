@@ -1,0 +1,41 @@
+﻿# modified by Skalchemist for OWBUnits to remove all template_counter settings
+
+division_template = {
+	name = "Serpent Guard"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+units = {
+
+	division = {
+		name = "Azure Serpent Guard"
+		location = 4296
+		division_template = "Serpent Guard"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1.0
+	}
+
+	division = {
+		name = "Gold Serpent Guard"
+		location = 4296
+		division_template = "Serpent Guard"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1.0
+	}
+
+	division = {
+		name = "Scarlet Serpent Guard"
+		location = 4296
+		division_template = "Serpent Guard"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1.0
+	}
+}

@@ -1,0 +1,118 @@
+﻿# modified by Skalchemist for OWBUnits to remove all template_counter settings
+
+division_template = {
+	name = "Tribal Scouts"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Wasteland Amazons"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Droids of Diana"
+	regiments = {
+		support_robot = { x = 0 y = 0 }
+		support_robot = { x = 0 y = 1 }
+		support_robot = { x = 1 y = 0 }
+		support_robot = { x = 1 y = 1 }
+		support_robot = { x = 2 y = 0 }
+		support_robot = { x = 2 y = 1 }
+	}
+}
+division_template = {
+	name = "Goddess's Reach"
+	override_model="support_robot_entity"
+	regiments = {
+		support_robot = { x = 0 y = 0 }
+		support_robot = { x = 0 y = 1 }
+		support_robot = { x = 0 y = 2 }
+		combat_robot = { x = 1 y = 0 }
+		combat_robot = { x = 1 y = 1 }
+		combat_robot = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "Twin Mothers Warriors"
+		location = 5583
+		division_template = "Wasteland Amazons"
+		start_experience_factor = 0
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Twin Mothers Hunters"
+		location = 6755
+		division_template = "Wasteland Amazons"
+		start_experience_factor = 0
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Forbidden Lands Defenders"
+		location = 6758
+		division_template = "Droids of Diana"
+		start_experience_factor = 0
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Diana's Defender Droids"
+		location = 9082
+		division_template = "Droids of Diana"
+		start_experience_factor = 0
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Guardians of Vault 29"
+		location = 5581
+		division_template = "Goddess's Reach"
+		start_experience_factor = 0
+		start_equipment_factor = 0.5
+	}
+}
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "TTM"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_robot_protectron_equipment_1
+			creator = "TTM"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = combat_robot_lifter_equipment
+			creator = "TTM"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 100
+	}
+}

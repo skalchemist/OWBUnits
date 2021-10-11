@@ -1,0 +1,74 @@
+﻿# modified by Skalchemist for OWBUnits to remove all template_counter settings
+
+division_template = {
+	name = "Unity Priests"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+}
+
+#Very weak, but AI cant handle them having a big template.
+division_template = {
+	name = "Attis Army Remnants"
+	regiments = {
+		super_mutant_infantry = { x = 0 y = 0 }
+		super_mutant_infantry = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Nightkins"
+	regiments = {
+		super_mutant_nightkin_infantry = { x = 0 y = 0 }
+		super_mutant_nightkin_infantry = { x = 0 y = 1 }
+		super_mutant_infantry = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "Crusher's Left Hand"
+		location = 11574
+		division_template = "Attis Army Remnants"
+		start_experience_factor = 1.0
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Crusher's Right Hand"
+		location = 11574
+		division_template = "Attis Army Remnants"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "The Crush Squad"
+		location = 11574
+		division_template = "Nightkins"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Crusher's Left Foot"
+		location = 11574
+		division_template = "Attis Army Remnants"
+		start_experience_factor = 1.0
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Crusher's Right Foot"
+		location = 11574
+		division_template = "Attis Army Remnants"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "The Slam Squad"
+		location = 11574
+		division_template = "Nightkins"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.5
+	}
+}

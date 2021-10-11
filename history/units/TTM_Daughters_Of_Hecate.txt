@@ -1,0 +1,55 @@
+﻿# modified by Skalchemist for OWBUnits to remove all template_counter settings
+
+division_template = {
+	name = "Daughters of Hecate"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "Emerald Daughters"
+		location = 5583
+		division_template = "Daughters of Hecate"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Violet Daughters"
+		location = 5583
+		division_template = "Daughters of Hecate"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Scarlet Daughters"
+		location = 5583
+		division_template = "Daughters of Hecate"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Jade Daughters"
+		location = 5583
+		division_template = "Daughters of Hecate"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Maroon Daughters"
+		location = 5583
+		division_template = "Daughters of Hecate"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+}
