@@ -221,7 +221,7 @@ spriteTypes = {
 		name = "GFX_unit_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
 		legacy_lazy_load = no
-		noOfFrames = 1 #2
+		noOfFrames = 2 #checking to see if I am right about issue on map
 	}
 
 	# heavy_infantry
