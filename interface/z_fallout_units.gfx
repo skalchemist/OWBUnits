@@ -725,6 +725,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_unit_dog_company_icon_small"
 		# textureFile = "gfx/texticons/unit_dog_company_icon_small.dds" # corrected so that names matche - skalchemist
+		textureFile = "gfx/texticons/unit_dog_company_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 1 #2
 	}
@@ -1072,8 +1073,8 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 	spriteType = {
-		name = "GFX_unit_plant_support_icon_small"
-		texturefile = "gfx/texticons/unit_monster_support_small.dds"
+		name = "GFX_unit_monster_support_icon_small"
+		texturefile = "gfx/texticons/unit_monster_support_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 1 #2
 	}
@@ -1086,7 +1087,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_unit_plant_support_icon_small"
-		texturefile = "gfx/texticons/unit_plant_support_small.dds"
+		texturefile = "gfx/texticons/unit_plant_support_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 1 #2
 	}
@@ -1194,7 +1195,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_unit_cybernetic_warform_icon_small"
 		# texturefile = "gfx/texticons/unit_unit_warform_icon_small.dds" # corrected for name consistency - skalchemist
-		texturefile = "gfx/texticons/unit_unit_cybernetic_warform_icon_small.dds"
+		texturefile = "gfx/texticons/unit_cybernetic_warform_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 1 #2
 	}
