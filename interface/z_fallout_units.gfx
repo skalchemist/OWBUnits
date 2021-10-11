@@ -1,111 +1,156 @@
-# modified by Skalchemist for OWBUnits mode to ensure all icons have noOfFrames=2
+# modified by Skalchemist for OWBUnits mod to ensure all unit icons have noOfFrames=2 and to assign each unit type from /commmon/units its own icons
 
 spriteTypes = {
-	# Setup by Mechano and Garnithor
+	# Previous setup by Mechano and Garnithor
+
 	# Group Icons
-	spriteType = { name = "GFX_group_robot_group_icon"								textureFile = "gfx/interface/counters/divisions_large/unit_support_robots_icon.dds" noOfFrames = 2 }
-	spriteType = { name = "GFX_group_mutant_group_icon"								textureFile = "gfx/interface/counters/divisions_large/unit_super_mutant_infantry_icon.dds" noOfFrames = 2 }
-	spriteType = { name = "GFX_group_special_forces_group_icon"						textureFile = "gfx/interface/counters/division_templates_large/custom_template_037.dds" noOfFrames = 2 }
-
-
+	spriteType = { 
+		name = "GFX_group_robot_group_icon"
+		# textureFile = "gfx/interface/counters/divisions_large/unit_support_robots_icon.dds" # corrected spelling
+		textureFile = "gfx/interface/counters/divisions_large/unit_support_robot_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = { 
+		name = "GFX_group_mutant_group_icon"
+		textureFile = "gfx/interface/counters/divisions_large/unit_super_mutant_infantry_icon.dds"
+		noOfFrames = 2 
+	}
+	# spriteType = { name = "GFX_group_special_forces_group_icon"						textureFile = "gfx/interface/counters/division_templates_large/custom_template_037.dds" noOfFrames = 1 }
+	spriteType = { 
+		name = "GFX_group_special_forces_group_icon"
+		textureFile = "gfx/interface/counters/divisions_large/unit_spec_ops_icon.dds"
+		noOfFrames = 2 
+	}
 
 	# Category icons
+	
+	# this one feels like should be more than infantry, but I'm not sure where it applies
 	spriteType = {
 		name = "GFX_unit_category_army_icon_small"
 		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
+
 	spriteType = {
 		name = "GFX_unit_category_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
+
 	spriteType = {
 		name = "GFX_unit_category_leg_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
+
 	spriteType = {   # Needs one
 		name = "GFX_unit_category_spec_ops_icon_small"
-		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		# texturefile = "gfx/texticons/unit_infantry_icon_small.dds" # corrected
+		texturefile = "gfx/texticons/unit_spec_ops_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
+
 	spriteType = {
 		name = "GFX_unit_category_light_special_forces_icon_small"
-		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		# texturefile = "gfx/texticons/unit_infantry_icon_small.dds" # corrected
+		texturefile = "gfx/texticons/unit_spec_ops_icon_small.dds"
 		legacy_lazy_load = no
+		# noOfFrames = 1
 		noOfFrames = 2
 	}
+
 	spriteType = {
 		name = "GFX_unit_category_behemoth_icon_small"
-		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		# texturefile = "gfx/texticons/unit_infantry_icon_small.dds" # corrected
+		texturefile = "gfx/texticons/unit_behemoth_icon_small.dds"
 		legacy_lazy_load = no
+		# noOfFrames = 1
 		noOfFrames = 2
 	}
+
 	spriteType = {
 		name = "GFX_unit_category_power_armour_icon_small"
-		texturefile = "gfx/texticons/unit_power_armor_icon_small.dds"
+		# texturefile = "gfx/texticons/unit_power_armor_icon_small.dds" # corrected
+		texturefile = "gfx/texticons/unit_power_armour_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
+
+	# used support robot icon
 	spriteType = {   # This needs a dedicated robots category icon
 		name = "GFX_unit_category_robots_icon_small"
-		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		# texturefile = "gfx/texticons/unit_infantry_icon_small.dds" # corrected
+		texturefile = "gfx/texticons/unit_support_robot_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
+
+	# feels like there should a separate symbol for this, but I don't know where this shows up
 	spriteType = {
 		name = "GFX_unit_category_mutants_icon_small"
 		texturefile = "gfx/texticons/unit_super_mutant_infantry_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
+
 	spriteType = {
 		name = "GFX_unit_category_vehicles_icon_small"
-		texturefile = "gfx/texticons/unit_motorbike_icon_small.dds"
+		texturefile = "gfx/texticons/unit_motorized_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
+	
+	# what the heck is weapon_infantry?
 	spriteType = { # Needs dedicated support icon
 		name = "GFX_unit_category_weapon_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
+
+	# definitely needs its own symbol, but what? and where does it appear?
 	spriteType = { # Same
 		name = "GFX_unit_category_non_combat_support_icon_small"
 		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
+
+	# definitely needs its own symbol, but what? and where does it appear?
 	spriteType = { #Same
 		name = "GFX_unit_category_combat_support_icon_small"
 		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
+
 	spriteType = {
 		name = "GFX_unit_category_demolitions_icon_small"
 		texturefile = "gfx/texticons/unit_demolitions_infantry_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
+	
 	spriteType = {
 		name = "GFX_unit_category_fireteams_icon_small"
 		texturefile = "gfx/texticons/unit_fireteam_infantry_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
+
 	spriteType = {  # needs one
 		name = "GFX_unit_category_special_forces_icon_small"
-		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		# texturefile = "gfx/texticons/unit_infantry_icon_small.dds" # corrected
+		texturefile = "gfx/texticons/unit_spec_ops_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
+	
+	# SHIP categories
 	spriteType = {
 		name = "GFX_unit_category_screen_ship_icon_small"
 		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
@@ -118,6 +163,8 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
+
+	# AIR categories
 	spriteType = {
 		name = "GFX_unit_category_strat_bomber_icon_small"
 		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
@@ -148,22 +195,25 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
+	# Blimp - moved here to get it out to the way - skalchemist
+	spriteType = {
+		name = "GFX_unit_blimp_bomber_icon_small"
+		texturefile = "gfx/texticons/unit_recon_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
 
-
-
-	# Infantry
+	# infantry
 	spriteType = {
 		name = "GFX_unit_infantry_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_infantry_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
@@ -171,19 +221,17 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	# Heavy Infantry
+	# heavy_infantry
 	spriteType = {
 		name = "GFX_unit_heavy_infantry_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_heavy_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_heavy_infantry_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_heavy_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_heavy_infantry_icon_small.dds"
@@ -191,19 +239,17 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	# firearms_militia
+	# militia
 	spriteType = {
 		name = "GFX_unit_militia_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_militia_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_militia_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_militia_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_militia_icon_small"
 		texturefile = "gfx/texticons/unit_militia_icon_small.dds"
@@ -211,19 +257,17 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	# police infantry, (TBH)
+	# police_infantry
 	spriteType = {
 		name = "GFX_unit_police_infantry_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_police_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_police_infantry_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_police_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_police_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_police_infantry_icon_small.dds"
@@ -231,19 +275,19 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	# skate infantry
+	# motorized - seems to be relying on the definition in the base subunitsicon.gfx - skalchemist
+	
+	# skate_infantry
 	spriteType = {
 		name = "GFX_unit_skate_infantry_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_skate_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_skate_infantry_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_skate_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_skate_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_skate_infantry_icon_small.dds"
@@ -252,57 +296,54 @@ spriteTypes = {
 	}
 
 	# wasteland_infantry
-	spriteType = {
-		name = "GFX_unit_wasteland_infantry_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_infantry_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_wasteland_infantry_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_wasteland_infantry_icon_small"
-		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
+	# NOT DEFINED - NO CHANGES NEEDED - skalchemist
+	#spriteType = {
+	#	name = "GFX_unit_wasteland_infantry_icon_medium"
+	#	textureFile = "gfx/interface/counters/divisions_large/unit_infantry_icon.dds"
+	#	noOfFrames = 2
+	#}
+	#spriteType = {
+	#	name = "GFX_unit_wasteland_infantry_icon_medium_white"
+	#	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_icon.dds"
+	#	noOfFrames = 2
+	#}
+	#spriteType = {
+	#	name = "GFX_unit_wasteland_infantry_icon_small"
+	#	texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+	#	legacy_lazy_load = no
+	#	noOfFrames = 2
+	#}
 
 	# melee_militia
-	spriteType = {
-		name = "GFX_unit_melee_militia_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_infantry_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_melee_militia_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_melee_militia_icon_small"
-		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
-	# supermutant infantry
+	# NOT DEFINED - NO CHANGES NEEDED - skalchemist
+	#spriteType = {
+	#	name = "GFX_unit_melee_militia_icon_medium"
+	#	textureFile = "gfx/interface/counters/divisions_large/unit_infantry_icon.dds"
+	#	noOfFrames = 2
+	#}
+	#spriteType = {
+	#	name = "GFX_unit_melee_militia_icon_medium_white"
+	#	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_icon.dds"
+	#	noOfFrames = 2
+	#}
+	#spriteType = {
+	#	name = "GFX_unit_melee_militia_icon_small"
+	#	texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+	#	legacy_lazy_load = no
+	#	noOfFrames = 2
+	#}
+	
+	# super_mutant_infantry
 	spriteType = {
 		name = "GFX_unit_super_mutant_infantry_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_super_mutant_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_super_mutant_infantry_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_mutant_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_super_mutant_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_super_mutant_infantry_icon_small.dds"
@@ -310,19 +351,17 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	# mirelurk infantry
+	# mirelurk_infantry
 	spriteType = {
 		name = "GFX_unit_mirelurk_infantry_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_mirelurk_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_mirelurk_infantry_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mirelurk_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_mirelurk_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_mirelurk_infantry_icon_small.dds"
@@ -330,19 +369,17 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	# molerat infantry
+	# molerat_infantry
 	spriteType = {
 		name = "GFX_unit_molerat_infantry_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_molerat_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_molerat_infantry_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_molerat_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_molerat_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_molerat_infantry_icon_small.dds"
@@ -350,137 +387,139 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	# supermutant nightkin
+	# super_mutant_nightkin_infantry
 	spriteType = {
 		name = "GFX_unit_super_mutant_nightkin_infantry_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_super_mutant_nightkin_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_super_mutant_nightkin_infantry_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_mutant_nightkin_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_super_mutant_nightkin_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_super_mutant_nightkin_infantry_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
-	# super mutant aux
+	
+	# super_mutant_aux_infantry
+	# This seems to be virutually identical to super_mutant_infantry, I'm not sure why there are two different techs, leaving with base super mutant icon - skalchemist
 	spriteType = {
 		name = "GFX_unit_super_mutant_aux_infantry_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_super_mutant_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_super_mutant_aux_infantry_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_mutant_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_super_mutant_aux_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_super_mutant_infantry_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
-	# supermutant behemoth tanks
+	
+	# behemoth
 	spriteType = {
 		name = "GFX_unit_behemoth_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_super_mutant_infantry_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_large/unit_super_mutant_infantry_icon.dds" # custom icon created - skalchemist
+		textureFile = "gfx/interface/counters/divisions_large/unit_behemoth_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_behemoth_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_mutant_infantry_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_mutant_infantry_icon.dds" # custom icon created - skalchemist
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_behemoth_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_behemoth_icon_small"
-		texturefile = "gfx/texticons/unit_super_mutant_infantry_icon_small.dds"
+		# texturefile = "gfx/texticons/unit_super_mutant_infantry_icon_small.dds" # custom icon created - skalchemist
+		texturefile = "gfx/texticons/unit_behemoth_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
-	# ghoul infantry
+	
+	# ghoul_infantry
 	spriteType = {
 		name = "GFX_unit_ghoul_infantry_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_ghoul_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_ghoul_infantry_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_ghoul_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_ghoul_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_ghoul_infantry_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
-# ghoul paratrooper
+	
+	# ghoul_paratrooper
 	spriteType = {
 		name = "GFX_unit_ghoul_paratrooper_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_ghoul_infantry_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_large/unit_ghoul_infantry_icon.dds" # has custom icon now - skalchemist
+		textureFile = "gfx/interface/counters/divisions_large/unit_ghoul_paratrooper_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_ghoul_paratrooper_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_ghoul_infantry_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_small/onmap_unit_ghoul_infantry_icon.dds" # has custom icon now - skalchemist
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_ghoul_paratrooer_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_ghoul_paratrooper_icon_small"
-		texturefile = "gfx/texticons/unit_ghoul_infantry_icon_small.dds"
+		# texturefile = "gfx/texticons/unit_ghoul_infantry_icon_small.dds" # has custom icon now - skalchemist
+		texturefile = "gfx/texticons/unit_ghoul_paratrooper_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
+	
 	# wasteland_melee_infantry
-	spriteType = {
-		name = "GFX_unit_wasteland_melee_infantry_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_infantry_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_wasteland_melee_infantry_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_wasteland_melee_infantry_icon_small"
-		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
+	# NOT DEFINED - NO CHANGES NEEDED - skalchemist
+	#spriteType = {
+	#	name = "GFX_unit_wasteland_melee_infantry_icon_medium"
+	#	textureFile = "gfx/interface/counters/divisions_large/unit_infantry_icon.dds"
+	#	noOfFrames = 2
+	#}
+	#spriteType = {
+	#	name = "GFX_unit_wasteland_melee_infantry_icon_medium_white"
+	#	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_icon.dds"
+	#	noOfFrames = 2
+	#}
+	#spriteType = {
+	#	name = "GFX_unit_wasteland_melee_infantry_icon_small"
+	#	texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+	#	legacy_lazy_load = no
+	#	noOfFrames = 2
+	#}
 
 	# power_armour_support
 	spriteType = {
 		name = "GFX_unit_power_armour_support_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_power_armor_support_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_large/unit_power_armor_support_icon.dds" # corrected so spelling is the same - skalchemist
+		textureFile = "gfx/interface/counters/divisions_large/unit_power_armour_support_icon.dds"
 		noOfFrames = 2
 	}
-
-	spriteType = {
-		name = "GFX_unit_power_armour_support_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_power_armor_support_icon.dds"
-		noOfFrames = 2
-	}
-
+	# not needed, only a support unit - skalchemist
+	#spriteType = {
+	#	name = "GFX_unit_power_armour_support_icon_medium_white"
+	#	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_power_armor_support_icon.dds"
+	#	noOfFrames = 2
+	#}
 	spriteType = {
 		name = "GFX_unit_power_armour_support_icon_small"
-		texturefile = "gfx/texticons/unit_power_armor_support_icon_small.dds"
+		#texturefile = "gfx/texticons/unit_power_armor_support_icon_small.dds" # corrected so spelling is the same - skalchemist
+		texturefile = "gfx/texticons/unit_power_armour_support_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
@@ -488,105 +527,119 @@ spriteTypes = {
 	# power_armour
 	spriteType = {
 		name = "GFX_unit_power_armour_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_power_armor_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_large/unit_power_armor_icon.dds" # corrected so that spelling matches - skalchemist
+		textureFile = "gfx/interface/counters/divisions_large/unit_power_armour_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_power_armour_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_power_armor_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_small/onmap_unit_power_armor_icon.dds" # corrected so that spelling matches - skalchemist
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_power_armour_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_power_armour_icon_small"
-		texturefile = "gfx/texticons/unit_power_armor_icon_small.dds"
+		# texturefile = "gfx/texticons/unit_power_armor_icon_small.dds" # corrected so that spelling matches - skalchemist
+		texturefile = "gfx/texticons/unit_power_armour_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	
+	# crusader_unit - doesn't seem to be in use but it is defined and seems to be power armour based, so just in case...
+	spriteType = {
+		name = "GFX_unit_crusader_unit_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_power_armour_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_crusader_unit_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_power_armour_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_crusader_unit_icon_small"
+		texturefile = "gfx/texticons/unit_power_armour_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
 
 	# motorbike
-	spriteType = {
-		name = "GFX_unit_motorbike_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_motorbike_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_motorbike_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_motorbike_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_motorbike_icon_small"
-		texturefile = "gfx/texticons/unit_motorbike_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
+	# NOT DEFINED - NO CHANGES NEEDED - skalchemist
+	#spriteType = {
+	#	name = "GFX_unit_motorbike_icon_medium"
+	#	textureFile = "gfx/interface/counters/divisions_large/unit_motorbike_icon.dds"
+	#	noOfFrames = 2
+	#}
+	#spriteType = {
+	#	name = "GFX_unit_motorbike_icon_medium_white"
+	#	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_motorbike_icon.dds"
+	#	noOfFrames = 2
+	#}
+	#spriteType = {
+	#	name = "GFX_unit_motorbike_icon_small"
+	#	texturefile = "gfx/texticons/unit_motorbike_icon_small.dds"
+	#	legacy_lazy_load = no
+	#	noOfFrames = 2
+	#}
 
 	# motorbike support
-	spriteType = {
-		name = "GFX_unit_motorbike_support_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_motorbike_support_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_motorbike_support_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_motorbike_support_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_motorbike_support_icon_small"
-		texturefile = "gfx/texticons/unit_motorbike_support_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
+	# NOT DEFINED - NO CHANGES NEEDED - skalchemist
+	#spriteType = {
+	#	name = "GFX_unit_motorbike_support_icon_medium"
+	#	textureFile = "gfx/interface/counters/divisions_large/unit_motorbike_support_icon.dds"
+	#	noOfFrames = 2
+	#}
+	#spriteType = {
+	#	name = "GFX_unit_motorbike_support_icon_medium_white"
+	#	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_motorbike_support_icon.dds"
+	#	noOfFrames = 2
+	#}
+	#spriteType = {
+	#	name = "GFX_unit_motorbike_support_icon_small"
+	#	texturefile = "gfx/texticons/unit_motorbike_support_icon_small.dds"
+	#	legacy_lazy_load = no
+	#	noOfFrames = 2
+	#}
 
 	# buggy
-	spriteType = {
-		name = "GFX_unit_buggy_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_buggy_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_buggy_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_buggy_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_buggy_icon_small"
-		texturefile = "gfx/texticons/unit_buggy_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
+	# NOT DEFINED - NO CHANGES NEEDED - skalchemist
+	#spriteType = {
+	#	name = "GFX_unit_buggy_icon_medium"
+	#	textureFile = "gfx/interface/counters/divisions_large/unit_buggy_icon.dds"
+	#	noOfFrames = 2
+	#}
+	#spriteType = {
+	#	name = "GFX_unit_buggy_icon_medium_white"
+	#	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_buggy_icon.dds"
+	#	noOfFrames = 2
+	#}
+	#spriteType = {
+	#	name = "GFX_unit_buggy_icon_small"
+	#	texturefile = "gfx/texticons/unit_buggy_icon_small.dds"
+	#	legacy_lazy_load = no
+	#	noOfFrames = 2
+	#}
 
 	# buggy_support
-	spriteType = {
-		name = "GFX_unit_buggy_support_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_buggy_support_icon.dds"
-		noOfFrames = 2
-	}
+	# NOT DEFINED - NO CHANGES NEEDED - skalchemist
+	#spriteType = {
+	#	name = "GFX_unit_buggy_support_icon_medium"
+	#	textureFile = "gfx/interface/counters/divisions_large/unit_buggy_support_icon.dds"
+	#	noOfFrames = 2
+	#}
+	#spriteType = {
+	#	name = "GFX_unit_buggy_support_icon_medium_white"
+	#	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_buggy_support_icon.dds"
+	#	noOfFrames = 2
+	#}
+	#spriteType = {
+	#	name = "GFX_unit_buggy_support_icon_small"
+	#	texturefile = "gfx/texticons/unit_buggy_support_icon_small.dds"
+	#	legacy_lazy_load = no
+	#	noOfFrames = 2
+	#}
 
-	spriteType = {
-		name = "GFX_unit_buggy_support_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_buggy_support_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_buggy_support_icon_small"
-		texturefile = "gfx/texticons/unit_buggy_support_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
-
-	# Fireteam
-
+	# fireteam_infantry
 	spriteType = {
 		name = "GFX_unit_fireteam_infantry_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_fireteam_infantry_icon.dds"
@@ -603,6 +656,8 @@ spriteTypes = {
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_fireteam_infantry_icon.dds"
 		noOfFrames = 2
 	}
+	
+	# fireteam_support
 	spriteType = {
 		name = "GFX_unit_fireteam_support_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_fireteam_support_icon.dds"
@@ -614,11 +669,14 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
-	spriteType = {
-		name = "GFX_unit_fireteam_support_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_fireteam_support_icon.dds"
-		noOfFrames = 2
-	}
+	# shouldn't be necessary, only support - skalchemist
+	#spriteType = {
+	#	name = "GFX_unit_fireteam_support_icon_medium_white"
+	#	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_fireteam_support_icon.dds"
+	#	noOfFrames = 2
+	#}
+	
+	# power_armour_fireteam_infantry
 	spriteType = {
 		name = "GFX_unit_power_armour_fireteam_infantry_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_power_armour_fireteam_infantry_icon.dds"
@@ -636,7 +694,7 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	# Dog Line unit
+	# dog_infantry
 	spriteType = {
 		name = "GFX_unit_dog_infantry_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_dog_infantry_icon.dds"
@@ -654,79 +712,103 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	# dog support
+	# dog_company
 	spriteType = {
 		name = "GFX_unit_dog_company_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_wardogs_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_large/unit_wardogs_icon.dds" # corrected so that names matche - skalchemist
+		textureFile = "gfx/interface/counters/divisions_large/unit_dog_company_icon.dds"
 		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_unit_dog_company_icon_small"
-		textureFile = "gfx/texticons/unit_wardogs_icon_small.dds"
+		# textureFile = "gfx/texticons/unit_dog_company_icon_small.dds" # corrected so that names matche - skalchemist
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
 
-	# support robots
+	# support_robot
 	spriteType = {
 		name = "GFX_unit_support_robot_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_support_robots_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_large/unit_support_robots_icon.dds" # corrected so spelling is the same - skalchemist
+		textureFile = "gfx/interface/counters/divisions_large/unit_support_robot_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_support_robot_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_support_robots_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_small/onmap_unit_support_robots_icon.dds" # corrected so spelling is the same - skalchemist
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_support_robot_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_support_robot_icon_small"
-		texturefile = "gfx/texticons/unit_support_robots_icon_small.dds"
+		# texturefile = "gfx/texticons/unit_support_robots_icon_small.dds" # corrected so spelling is the same - skalchemist
+		texturefile = "gfx/texticons/unit_support_robot_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
-	# combat robots
+	
+	# combat_robot
 	spriteType = {
 		name = "GFX_unit_combat_robot_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_combat_robots_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_large/unit_combat_robots_icon.dds" # corrected so spelling is the same - skalchemist
+		textureFile = "gfx/interface/counters/divisions_large/unit_combat_robot_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_combat_robot_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_combat_robots_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_small/onmap_unit_combat_robots_icon.dds" # corrected so spelling is the same - skalchemist
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_combat_robot_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_combat_robot_icon_small"
-		texturefile = "gfx/texticons/unit_combat_robots_icon_small.dds"
+		# texturefile = "gfx/texticons/unit_combat_robots_icon_small.dds" # corrected so spelling is the same - skalchemist
+		texturefile = "gfx/texticons/unit_combat_robot_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	
+	# super_heavy_robot - moved from z_fallout_division_designer.gfx - skalchemist
+	spriteType = {
+		name = "GFX_unit_super_heavy_robot_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_super_heavy_robot_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_super_heavy_robot_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_heavy_robot_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_super_heavy_robot_icon_small"
+		texturefile = "gfx/texticons/unit_super_heavy_robot_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
 
-	# security robots
+	# Security_robot
+	# seems to be limited to securitrons
 	spriteType = {
 		name = "GFX_unit_security_robot_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_combat_robots_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_large/unit_combat_robots_icon.dds" # have new icon - skalchemist
+		textureFile = "gfx/interface/counters/divisions_large/unit_security_robot_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_security_robot_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_combat_robots_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_small/onmap_unit_combat_robots_icon.dds" # have new icon - skalchemist
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_security_robot_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_security_robot_icon_small"
-		texturefile = "gfx/texticons/unit_combat_robots_icon_small.dds"
+		# texturefile = "gfx/texticons/unit_combat_robots_icon_small.dds" # have new icon - skalchemist
+		texturefile = "gfx/texticons/unit_security_robot_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
 
-	# demolitions support
+	# demolitions_infantry
 	spriteType = {
 		name = "GFX_unit_demolitions_infantry_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_demolitions_infantry_icon.dds"
@@ -743,6 +825,8 @@ spriteTypes = {
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_demolitions_infantry_icon.dds"
 		noOfFrames = 2
 	}
+	
+	#demolitions_support
 	spriteType = {
 		name = "GFX_unit_demolitions_support_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_demolitions_support_icon.dds"
@@ -750,15 +834,18 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_unit_demolitions_support_icon_small"
-		texturefile = "gfx/texticons/unit_demolitions_support_small.dds"
+		texturefile = "gfx/texticons/unit_demolitions_support_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
-	spriteType = {
-		name = "GFX_unit_demolitions_support_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_demolitions_support_icon.dds"
-		noOfFrames = 2
-	}
+	# shouldn't be necessary, support only - skalchemist
+	#spriteType = {
+	#	name = "GFX_unit_demolitions_support_icon_medium_white"
+	#	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_demolitions_support_icon.dds"
+	#	noOfFrames = 2
+	#}
+	
+	# power_armour_demolitions_infantry
 	spriteType = {
 		name = "GFX_unit_power_armour_demolitions_infantry_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_power_armour_demolitions_infantry_icon.dds"
@@ -776,38 +863,39 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	# anti tank support
+	# anti_tank_company
 	spriteType = {
 		name = "GFX_unit_anti_tank_company_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_anti_tank_support_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_large/unit_anti_tank_support_icon.dds" # corrected for name consistency - skalchemist
+		textureFile = "gfx/interface/counters/divisions_large/unit_anti_tank_company_icon.dds"
 		noOfFrames = 2
 	}
-
-	spriteType = {
-		name = "GFX_unit_anti_tank_company_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_anti_tank_support_icon.dds"
-		noOfFrames = 2
-	}
-
+	# shouldn't be necessary, only support - skalchemist
+	#spriteType = {
+	#	name = "GFX_unit_anti_tank_company_icon_medium_white"
+	#	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_anti_tank_support_icon.dds" 
+	#	noOfFrames = 2
+	#}
 	spriteType = {
 		name = "GFX_unit_anti_tank_company_icon_small"
-		texturefile = "gfx/texticons/unit_anti_tank_support_icon_small.dds"
+		# texturefile = "gfx/texticons/unit_anti_tank_support_icon_small.dds" # corrected for name consistency - skalchemist
+		texturefile = "gfx/texticons/unit_anti_tank_company_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
 
-	# anti air support
+	# anti_air_support
 	spriteType = {
 		name = "GFX_unit_anti_air_support_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_anti_air_support_icon.dds"
 		noOfFrames = 2
 	}
-
-	spriteType = {
-		name = "GFX_unit_anti_air_support_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_anti_air_support_icon.dds"
-		noOfFrames = 2
-	}
+	# Not needed, support company only - skalchemist
+	# spriteType = {
+	#	name = "GFX_unit_anti_air_support_icon_medium_white"
+	#	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_anti_air_support_icon.dds"
+	#	noOfFrames = 2
+	#}
 	spriteType = {
 		name = "GFX_unit_anti_air_support_icon_small"
 		texturefile = "gfx/texticons/unit_anti_air_support_icon_small.dds"
@@ -816,72 +904,77 @@ spriteTypes = {
 	}
 
 	# flamer support/company
-	spriteType = {
-		name = "GFX_unit_flamer_company_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_flamer_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_flamer_company_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_flamer_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_flamer_company_icon_small"
-		texturefile = "gfx/texticons/unit_flamer_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
+	# Not defined in units files, I think flamers have been integrated into demolitions - skalchemist
+	#spriteType = {
+	#	name = "GFX_unit_flamer_company_icon_medium"
+	#	textureFile = "gfx/interface/counters/divisions_large/unit_flamer_icon.dds"
+	#	noOfFrames = 2
+	#}
+	#spriteType = {
+	#	name = "GFX_unit_flamer_company_icon_medium_white"
+	#	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_flamer_icon.dds"
+	#	noOfFrames = 2
+	#}
+	#spriteType = {
+	#	name = "GFX_unit_flamer_company_icon_small"
+	#	texturefile = "gfx/texticons/unit_flamer_icon_small.dds"
+	#	legacy_lazy_load = no
+	#	noOfFrames = 2
+	#}
+	
 	# laser company
-	spriteType = {
-		name = "GFX_unit_laser_company_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_laser_support_icon.dds"
-		noOfFrames = 2
-	}
+	# seems to no longer be in use, not defined
+	#spriteType = {
+	#	name = "GFX_unit_laser_company_icon_medium"
+	#	textureFile = "gfx/interface/counters/divisions_large/unit_laser_support_icon.dds"
+	#	noOfFrames = 2
+	#}
+	#spriteType = {
+	#	name = "GFX_unit_laser_company_icon_medium_white"
+	#	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_laser_support_icon.dds"
+	#	noOfFrames = 2
+	#}
+	#spriteType = {
+	#	name = "GFX_unit_laser_company_icon_small"
+	#	texturefile = "gfx/texticons/unit_laser_support_icon_small.dds"
+	#	legacy_lazy_load = no
+	#	noOfFrames = 2
+	#}
 
-	spriteType = {
-		name = "GFX_unit_laser_company_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_laser_support_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_laser_company_icon_small"
-		texturefile = "gfx/texticons/unit_laser_support_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
-	################################
-	# TRANSPOSED FROM VANILLA UNITS
-	################################
-	# APC
+	# apc
 	spriteType = {
 		name = "GFX_unit_apc_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_mechanized_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_large/unit_mechanized_icon.dds" # corrected to use new icon - skalchemist
+		textureFile = "gfx/interface/counters/divisions_large/unit_apc_icon.dds"
 		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_unit_apc_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mechanized_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mechanized_icon.dds" # corrected to use new icon - skalchemist
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_apc_icon.dds"
 		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_unit_apc_icon_small"
-		texturefile = "gfx/texticons/unit_mechanized_icon_small.dds"
+		# texturefile = "gfx/texticons/unit_mechanized_icon_small.dds" # corrected to use new icon - skalchemist
+		texturefile = "gfx/texticons/unit_apc_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
-	# Spec Ops
+
+	# fake_intel_unit - seems to be handled by base files 
+	
+	# Spec Ops - spec_ops
 	spriteType = {
 		name = "GFX_unit_spec_ops_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_spec_ops_icon.dds"
+		# noOfFrames = 1
 		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_unit_spec_ops_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_spec_ops_icon.dds"
+		# noOfFrames = 1
 		noOfFrames = 2
 	}
 	spriteType = {
@@ -890,58 +983,73 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
-	# Cavalry
+
+	# spec_ops_cavalry
 	spriteType = {
 		name = "GFX_unit_spec_ops_cavalry_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_cavalry_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_large/unit_cavalry_icon.dds" # corrected to have consistent name - skalchemist
+		textureFile = "gfx/interface/counters/divisions_large/unit_spec_ops_cavalry_icon.dds"
 		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_unit_spec_ops_cavalry_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cavalry_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cavalry_icon.dds" # corrected to have consistent name - skalchemist
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_spec_ops_cavalry_icon.dds"
 		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_unit_spec_ops_cavalry_icon_small"
-		texturefile = "gfx/texticons/unit_cavalry_icon_small.dds"
+		# texturefile = "gfx/texticons/unit_cavalry_icon_small.dds" # corrected to have consistent name - skalchemist
+		texturefile = "gfx/texticons/unit_spec_ops_cavalry_icon_small.dds" 
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
-	# Tanks
+
+	# tank
 	spriteType = {
 		name = "GFX_unit_tank_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_heavy_armor_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_large/unit_heavy_armor_icon.dds" # corrected to have consistent name - skalchemist
+		textureFile = "gfx/interface/counters/divisions_large/unit_tank_icon.dds"
 		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_unit_tank_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" # corrected to have consistent name - skalchemist
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_tank_icon.dds"
 		noOfFrames = 2
 	}
-	spriteType = {
-		name = "GFX_nato_unit_tank_icon_small"
-		texturefile = "gfx/texticons/nato_unit_heavy_armor_icon_small.dds"
-		legacy_lazy_load = no
-	}
+	# this should be uncessary with new icons - skalchemist
+	# spriteType = {
+	#	name = "GFX_nato_unit_tank_icon_small"
+	#	texturefile = "gfx/texticons/nato_unit_heavy_armor_icon_small.dds"
+	#	legacy_lazy_load = no
+	#}
 	spriteType = {
 		name = "GFX_unit_tank_icon_small"
-		texturefile = "gfx/texticons/unit_heavy_armor_icon_small.dds"
+		# texturefile = "gfx/texticons/unit_heavy_armor_icon_small.dds" # corrected to have consistent name - skalchemist
+		texturefile = "gfx/texticons/unit_tank_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
-	# medical chem company
+	
+	# medical_chem_company
 	spriteType = {
 		name = "GFX_unit_medical_chem_company_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/support_unit_field_hospital_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_large/support_unit_field_hospital_icon.dds" # corrected to have consistent name - skalchemist
+		textureFile = "gfx/interface/counters/divisions_large/unit_medical_chem_company_icon.dds"
 		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_unit_medical_chem_company_icon_small"
-		texturefile = "gfx/texticons/support_field_hospital_small.dds"
+		# texturefile = "gfx/texticons/support_field_hospital_small.dds" # corrected to have consistent name - skalchemist
+		texturefile = "gfx/texticons/unit_medical_chem_company_icon_small.dds" 
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
-	# cybernetic support company
+	
+	# logistics_company - should be handled by main subunitsicon.gfx
+
+	# cybernetic_support
 	spriteType = {
 		name = "GFX_unit_cybernetic_support_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_cybernetic_support_icon.dds"
@@ -953,7 +1061,21 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
-	# plant support company
+
+	# monster_support
+	spriteType = {
+		name = "GFX_unit_monster_support_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_monster_support_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_plant_support_icon_small"
+		texturefile = "gfx/texticons/unit_monster_support_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	# plant_support
 	spriteType = {
 		name = "GFX_unit_plant_support_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_plant_support_icon.dds"
@@ -965,85 +1087,87 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
-	spriteType = {
-		name = "GFX_unit_plant_support_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_plant_support_icon.dds"
-		noOfFrames = 2
-	}
+	#shouldn't be necessary, support only - skalchemist
+	#spriteType = {
+	#	name = "GFX_unit_plant_support_icon_medium_white"
+	#	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_plant_support_icon.dds"
+	#	noOfFrames = 2
+	#}
+	
+	# recon_company
 	spriteType = {
 		name = "GFX_unit_recon_company_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_recon_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_large/unit_recon_icon.dds" # corrected for name consistency - skalchemist
+		textureFile = "gfx/interface/counters/divisions_large/unit_recon_company_icon.dds"
 		noOfFrames = 2
 	}
-	spriteType = {
-		name = "GFX_unit_recon_company_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_recon_icon.dds"
-		noOfFrames = 2
-	}
+	# shouldn't be necessary, support only
+	#spriteType = {
+	#	name = "GFX_unit_recon_company_icon_medium_white"
+	#	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_recon_icon.dds"
+	#	noOfFrames = 2
+	#}
 	spriteType = {
 		name = "GFX_unit_recon_company_icon_small"
-		texturefile = "gfx/texticons/unit_recon_icon_small.dds"
+		# texturefile = "gfx/texticons/unit_recon_icon_small.dds" # corrected for name consistency - skalchemist
+		texturefile = "gfx/texticons/unit_recon_company_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
-	# Blimp
-	spriteType = {
-		name = "GFX_unit_blimp_bomber_icon_small"
-		texturefile = "gfx/texticons/unit_recon_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
-	# Chariot
+
+	# Chariot - chariot_unit
 	spriteType = {
 		name = "GFX_unit_chariot_unit_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_chariot_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_large/unit_chariot_icon.dds" # corrected for naming consistency - skalchemist
+		textureFile = "gfx/interface/counters/divisions_large/unit_chariot_unit_icon.dds"
 		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_unit_chariot_unit_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_chariot_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_small/onmap_unit_chariot_icon.dds" # corrected for naming consistency - skalchemist
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_chariot_unit_icon.dds"
 		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_unit_chariot_unit_icon_small"
-		texturefile = "gfx/texticons/unit_chariot_icon_small.dds"
+		# texturefile = "gfx/texticons/unit_chariot_icon_small.dds" # corrected for naming consistency - skalchemist
+		texturefile = "gfx/texticons/unit_chariot_unit_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
 
-	# Sentinel
+	# Sentinel - sentinel_unit
 	spriteType = {
 		name = "GFX_unit_sentinel_unit_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_sentinel_power_armor_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_large/unit_sentinel_power_armor_icon.dds" # corrected so spelling is the same - skalchemist
+		textureFile = "gfx/interface/counters/divisions_large/unit_sentinel_unit_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_sentinel_unit_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_sentinel_power_armor_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_small/onmap_unit_sentinel_power_armor_icon.dds" # corrected so spelling is the same - skalchemist
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_sentinel_unit_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_sentinel_unit_icon_small"
-		texturefile = "gfx/texticons/unit_sentinel_power_armor_icon_small.dds"
+		# texturefile = "gfx/texticons/unit_sentinel_power_armor_icon_small.dds" # corrected so spelling is the same - skalchemist
+		texturefile = "gfx/texticons/unit_sentinel_unit_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
 
-	# Alamo Volunteers/defenders
+	# Alamo Volunteers/defenders - alamo_defenders
 	spriteType = {
 		name = "GFX_unit_alamo_defenders_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_alamo_defenders_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_alamo_defenders_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_alamo_defenders_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_alamo_defenders_icon_small"
 		texturefile = "gfx/texticons/unit_alamo_defenders_icon_small.dds"
@@ -1051,39 +1175,39 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	# warform
+	# cybernetic_warform
 	spriteType = {
 		name = "GFX_unit_cybernetic_warform_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_warform_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_large/unit_warform_icon.dds" # corrected for name consistency - skalchemist
+		textureFile = "gfx/interface/counters/divisions_large/unit_cybernetic_warform_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_cybernetic_warform_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_warform_icon.dds"
+		# textureFile = "gfx/interface/counters/divisions_small/onmap_unit_warform_icon.dds" # corrected for name consistency - skalchemist
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cybernetic_warform_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_cybernetic_warform_icon_small"
-		texturefile = "gfx/texticons/unit_unit_warform_icon_small.dds"
+		# texturefile = "gfx/texticons/unit_unit_warform_icon_small.dds" # corrected for name consistency - skalchemist
+		texturefile = "gfx/texticons/unit_unit_cybernetic_warform_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
 
-	# Firebase Support Icons
+	# Firebase Support Icons - forward_firebase_support
 	spriteType = {
 		name = "GFX_unit_forward_firebase_support_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_forward_firebase_support_icon.dds"
 		noOfFrames = 2
 	}
-
-	spriteType = {
-		name = "GFX_unit_forward_firebase_support_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_forward_firebase_support_icon.dds"
-		noOfFrames = 2
-	}
-
+	# should not be needed, support only - skalchemist
+	#spriteType = {
+	#	name = "GFX_unit_forward_firebase_support_icon_medium_white"
+	#	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_forward_firebase_support_icon.dds"
+	#	noOfFrames = 2
+	#}
 	spriteType = {
 		name = "GFX_unit_forward_firebase_support_icon_small"
 		texturefile = "gfx/texticons/unit_forward_firebase_support_icon_small.dds"
@@ -1091,19 +1215,17 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	# gary
+	# gary_unit
 	spriteType = {
 		name = "GFX_unit_gary_unit_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_gary_unit_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_gary_unit_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_gary_unit_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_gary_unit_icon_small"
 		texturefile = "gfx/texticons/unit_gary_unit_icon_small.dds"

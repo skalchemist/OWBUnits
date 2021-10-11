@@ -1,0 +1,307 @@
+# modified by Skalchemist for OWBUnits mod to remove all "small" assignments (those are handled in z_fallout_units.gfx)
+
+spriteTypes = {
+	#spriteType = {
+	#	name = "GFX_unit_militia_icon_small"
+	#	texturefile = "gfx/texticons/unit_militia_icon_small.dds"
+	#	legacy_lazy_load = no
+	#	noOfFrames = 2
+	#}
+	#spriteType = {
+	#	name = "GFX_unit_support_robot_icon_small"
+	#	texturefile = "gfx/texticons/unit_support_robots_icon_small.dds"
+	#	legacy_lazy_load = no
+	#	noOfFrames = 2
+	#}
+	#spriteType = {
+	#	name = "GFX_unit_combat_robot_icon_small"
+	#	texturefile = "gfx/texticons/unit_combat_robots_icon_small.dds"
+	#	legacy_lazy_load = no
+	#	noOfFrames = 2
+	#}
+	#spriteType = {
+	#	name = "GFX_unit_dog_company_icon_small"
+	#	texturefile = "gfx/texticons/unit_wardogs_icon_small.dds"
+	#	legacy_lazy_load = no
+	#	# noOfFrames = 1
+	#	noOfFrames = 2
+	#}
+	#spriteType = {
+	#	name = "GFX_unit_power_armor_aux_icon_small"
+	#	texturefile = "gfx/texticons/unit_power_armor_icon_small.dds"
+	#	legacy_lazy_load = no
+	#	noOfFrames = 2
+	#}
+	#spriteType = {
+	#	name = "GFX_unit_power_armor_icon_small"
+	#	texturefile = "gfx/texticons/unit_power_armor_icon_small.dds"
+	#	legacy_lazy_load = no
+	#	noOfFrames = 2
+	#}
+	#spriteType = {
+	#	name = "GFX_unit_motorized_icon_small"
+	#	texturefile = "gfx/texticons/unit_motorized_icon.dds"
+	#	legacy_lazy_load = no
+	#	# noOfFrames = 1
+	#	noOfFrames = 2
+	#}
+	spriteType = {
+		name = "GFX_geck_texticon"
+		texturefile = "gfx/texticons/geck_icon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_ttm_texticon"
+		texturefile = "gfx/texticons/ttm_focus_ttm_1.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_rob_doki_doki_texticon"
+		texturefile = "gfx/texticons/rob_doki_doki_logo.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_april_fools_eaw_texticon"
+		texturefile = "gfx/texticons/april_fools_eaw.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_april_fools_harmony_and_unity_texticon"
+		texturefile = "gfx/texticons/april_fools_harmony_and_unity.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_april_fools_kr_texticon"
+		texturefile = "gfx/texticons/april_fools_kr.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_april_fools_the_kaisers_return_texticon"
+		texturefile = "gfx/texticons/april_fools_the_kaisers_return.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_april_fools_eaw_texticon"
+		texturefile = "gfx/texticons/april_fools_eaw.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_april_fools_harmony_and_unity_texticon"
+		texturefile = "gfx/texticons/april_fools_harmony_and_unity.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_april_fools_kr_texticon"
+		texturefile = "gfx/texticons/april_fools_kr.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_april_fools_the_kaisers_return_texticon"
+		texturefile = "gfx/texticons/april_fools_the_kaisers_return.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_soft_attack_texticon"
+		texturefile = "gfx/texticons/soft_attack.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_hard_attack_texticon"
+		texturefile = "gfx/texticons/hard_attack.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_defense_texticon"
+		texturefile = "gfx/texticons/defense.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_breakthrough_texticon"
+		texturefile = "gfx/texticons/breakthrough.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_piercing_texticon"
+		texturefile = "gfx/texticons/piercing.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_armour_texticon"
+		texturefile = "gfx/texticons/armour.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_health_texticon"
+		texturefile = "gfx/texticons/health.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_anti_air_texticon"
+		texturefile = "gfx/texticons/anti_air.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_movement_texticon"
+		texturefile = "gfx/texticons/movement.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_supply_texticon"
+		texturefile = "gfx/texticons/supply.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_trickleback_texticon"
+		texturefile = "gfx/texticons/trickleback.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_cell_usage_texticon"
+		texturefile = "gfx/texticons/cell_usage.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_cell_cap_texticon"
+		texturefile = "gfx/texticons/cell_cap.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_initiative_texticon"
+		texturefile = "gfx/texticons/initiative.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_org_texticon"
+		texturefile = "gfx/texticons/org.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_recon_texticon"
+		texturefile = "gfx/texticons/recon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_recovery_texticon"
+		texturefile = "gfx/texticons/recovery.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_weight_texticon"
+		texturefile = "gfx/texticons/weight.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_suppression_texticon"
+		texturefile = "gfx/texticons/suppression.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_training_texticon"
+		texturefile = "gfx/texticons/training.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_reliability_texticon"
+		texturefile = "gfx/texticons/reliability.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_entrenchment_texticon"
+		texturefile = "gfx/texticons/entrenchment.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_xp_lost_texticon"
+		texturefile = "gfx/texticons/xp_lost.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_width_texticon"
+		texturefile = "gfx/texticons/width.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_equipment_capture_texticon"
+		texturefile = "gfx/texticons/equipment_capture.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_manpower_texticon"
+		texturefile = "gfx/texticons/manpower.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_hardness_texticon"
+		texturefile = "gfx/texticons/hardness.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_reinforcement_texticon"
+		texturefile = "gfx/texticons/reinforcement.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_attrition_texticon"
+		texturefile = "gfx/texticons/attrition.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_caps_trade_modifier_texticon"
+		texturefile = "gfx/interface/gui/caps_trade_modifier_text_icon.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_caps_base_modifier_texticon"
+		texturefile = "gfx/interface/gui/caps_base_modifier_text_icon.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_caps_base_modifier_texticon"
+		texturefile = "gfx/interface/gui/caps_base_modifier_text_icon.dds"
+		legacy_lazy_load = no
+	}
+
+}
+# vim: set ft=pdx ts=2 sw=2 tw=79 :
