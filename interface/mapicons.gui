@@ -49,7 +49,7 @@ guiTypes = {
 
 		iconType ={
 			name ="type"
-			spriteType = "GFX_tiled_window_transparent"
+			# spriteType = "GFX_tiled_window_transparent"
 			position = { x=3 y=-2 } # position = { x=3 y=3 } - MPU
 			alwaystransparent = yes
 		}
